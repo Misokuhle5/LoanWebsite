@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="Calculate.css">
+    </head>
+    <nav>
+        <div class="nav_header">
+           <img src="/Images/Screenshot 2024-04-24 155638.png" class="logo" alt="...">
+           </div>
+       </nav>
+
+    <body>
+        <div class="loan-calculator">
+           <div class="top">
+              <h2>Loan Calculator</h2>
+              <form action="form">
+                  <div class="group">
+                    <label for = "loan amount">Loan amount: R<span id = "loan-amout-value">0</span></label>
+                    <br>
+                    <div class = "slider-container">
+                      <input type = "range" id ="loan-amout-slider" min ="1500" max = "500000" step = "500" value="10000" class="loan-amount">
+                    </div>
+                  </div>
+                    
+                  <div class="group">
+                    <label for = "loan rate">Interest Rate: <span id = "loan-interest-value">0</span>%</label>
+                    <br>
+                    <div class = "slider-container">
+                    <input type="range" id="loan-interest-slider" value="0" min="15" max="25" step="1" class="interest-rate" />
+                  </div>
+                  </div>
+
+                  <div class="group">
+                    <label for = "loan tenure">Tenure (months): <span id = "loan-tenure-value">0</span></label>
+                    <br>
+                    <div class = "slider-container">
+                    <input type="range" id="loan-tenure-slider" value="0" min="6" max="72" step="1" class="loan-tenure" />
+                  </div>
+                  </div>
+              </form>
+           </div> 
+           <div class="result">
+               <div class="left">
+                   <div class="loan-emi">
+                    <h3>Loan EMI</h3>
+                    <div class="value">123</div>
+                   </div>
+
+                   <div class="total-interest">
+                    <h3>Total Interest Rate Payable</h3>
+                    <div class="value">124</div>
+                   </div>
+
+                   <div class="total-amount">
+                    <h3>Total Amount</h3>
+                    <div class="value">125</div>
+                   </div>
+                   <button class="calculate-btn">Calculate</button>
+               </div>
+           </div>
+        </div>
+
+        <h2>Loan Types Comparison</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Loan Type</th>
+                <th>Interest Rate</th>
+                <th>Loan Term</th>
+                <th>Minimum Credit Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Personal Loan</td>
+                <td>8% - 15%</td>
+                <td>1 - 5 years</td>
+                <td>600</td>
+            </tr>
+            <tr>
+                <td>Auto Loan</td>
+                <td>10% - 20%</td>
+                <td>2 - 7 years</td>
+                <td>650</td>
+            </tr>
+            <tr>
+                <td>Home Loan</td>
+                <td>3% - 25%</td>
+                <td>15 - 30 years</td>
+                <td>620</td>
+            </tr>
+            <tr>
+                <td>Business Loan</td>
+                <td>15% - 25%</td>
+                <td>1 - 25 years</td>
+                <td>680</td>
+            </tr>
+            <tr>
+              <td>Student Loan</td>
+              <td>15% - 25%</td>
+              <td>1 - 25 years</td>
+              <td>670</td>
+          </tr>
+          <tr>
+            <td>Medical Loan</td>
+            <td>13% - 29%</td>
+            <td>1 - 25 years</td>
+            <td>700</td>
+        </tr>
+        </tbody>
+    </table>
+    <button id="backButton">Back To Home</button>
+
+    <script>
+        document.getElementById('backButton').addEventListener('click', function() {
+        window.history.back();
+    });
+    
+    </script>
+
+        <script src="calculate.js"></script>
+    </body>
+</html>            

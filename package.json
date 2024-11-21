@@ -1,0 +1,17 @@
+
+{
+  "name": "loan-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "natural": "^7.0.0",
+    "node-fetch": "^3.3.2"
+  }
+}
